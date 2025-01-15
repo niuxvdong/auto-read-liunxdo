@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto Read
 // @namespace    http://tampermonkey.net/
-// @version      1.3.1
+// @version      1.3.2
 // @description  自动刷linuxdo文章
 // @author       liuweiqing
 // @match        https://meta.discourse.org/*
@@ -66,7 +66,7 @@
   let scrollInterval = null;
   let checkScrollTimeout = null;
   let autoLikeInterval = null;
-
+//在主页去寻找可以进入的话题，同时可以在文章页进行浏览
   function scrollToBottomSlowly(
     stopDistance = 9999999999,
     callback = undefined,
@@ -174,18 +174,9 @@
     // 在新页面加载后执行检查
     // 使用CSS属性选择器寻找href属性符合特定格式的<a>标签
     const links = document.querySelectorAll('a[href^="/t/"]');
-    // const alreadyReadLinks = JSON.parse(
-    //   localStorage.getItem("alreadyReadLinks") || "[]"
-    // ); // 获取已阅读链接列表
 
     // 筛选出未阅读的链接
     const unreadLinks = Array.from(links).filter((link) => {
-      // 检查链接是否已经被读过
-      // const isAlreadyRead = alreadyReadLinks.includes(link.href);
-      // if (isAlreadyRead) {
-      //   return false; // 如果链接已被读过，直接排除
-      // }
-
       // 向上遍历DOM树，查找包含'visited'类的父级元素，最多查找三次
       let parent = link.parentElement;
       let times = 0; // 查找次数计数器
@@ -209,17 +200,6 @@
       const link = unreadLinks[randomIndex];
       // 打印找到的链接（可选）
       console.log("Found link:", link.href);
-      // // 模拟点击该链接
-      // setTimeout(() => {
-      //   link.click();
-      // }, delay);
-      // 将链接添加到已阅读列表并更新localStorage
-      // alreadyReadLinks.push(link.href);
-      // localStorage.setItem(
-      //   "alreadyReadLinks",
-      //   JSON.stringify(alreadyReadLinks)
-      // );
-
       // 导航到该链接
       window.location.href = link.href;
     } else {
@@ -299,7 +279,7 @@
         } else {
           console.log("clickCounter:", clickCounter);
         }
-      }, index * 1000); // 这里的1000毫秒是两次点击之间的间隔，可以根据需要调整
+      }, index * 3000); // 这里的3000毫秒是两次点击之间的间隔，可以根据需要调整
     });
   }
   const button = document.createElement("button");
@@ -335,7 +315,9 @@
     } else {
       // 如果是Linuxdo，就导航到我的帖子
       if (BASE_URL == "https://linux.do") {
-        window.location.href = "https://linux.do/t/topic/13716/237";
+        window.location.href = "https://linux.do/t/topic/13716/340";
+      } else if (BASE_URL == "https://meta.appinn.net") {
+        window.location.href = "https://meta.appinn.net/t/topic/52006";
       } else {
         window.location.href = `${BASE_URL}/t/topic/1`;
       }

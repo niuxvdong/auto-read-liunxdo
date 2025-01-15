@@ -1,5 +1,151 @@
 # Changelog
 
+### [1.8.1](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.8.0...v1.8.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* 展示信息 ([27ffc94](https://www.github.com/14790897/auto-read-liunxdo/commit/27ffc94610e88df9d06e847461cddb5faff27b6b))
+
+## [1.8.0](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.7.0...v1.8.0) (2025-01-14)
+
+
+### Features
+
+* 登录失败重试三次 ([2fdee4e](https://www.github.com/14790897/auto-read-liunxdo/commit/2fdee4e6f23f16ae565594a35008101596400b36))
+* 超时和密码错误逻辑分开 ([c2f61e3](https://www.github.com/14790897/auto-read-liunxdo/commit/c2f61e35f16b8fb055aa3b612c2b3c1de85194e8))
+
+
+### Bug Fixes
+
+* error ([cff54ac](https://www.github.com/14790897/auto-read-liunxdo/commit/cff54ac99fe95466b7e7b5fd2f5356193465fcec))
+* error ([a106c34](https://www.github.com/14790897/auto-read-liunxdo/commit/a106c34866588a0e401c5c3e8abe0619422e349c))
+* error ([e689db0](https://www.github.com/14790897/auto-read-liunxdo/commit/e689db064937e9527d6208f009c5f85b2a2ae1ce))
+* xvfb包 ([da5549a](https://www.github.com/14790897/auto-read-liunxdo/commit/da5549abfb71f0651ea51dc502b039c5375ef094))
+* 未使用await ([2505906](https://www.github.com/14790897/auto-read-liunxdo/commit/2505906771302de2a7f1f49abd5f7e9b75421f53))
+* 检测密码错误提示 ([22d3766](https://www.github.com/14790897/auto-read-liunxdo/commit/22d3766248481d1290b83e7e3c0eddd34def4573))
+* 登录失败throw error ([2880de3](https://www.github.com/14790897/auto-read-liunxdo/commit/2880de320a1829b6cb070ab8f1f647c2e2e35356))
+
+## [1.7.0](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.6.0...v1.7.0) (2024-11-29)
+
+
+### Features
+
+* 健康探针 ([0768f30](https://www.github.com/14790897/auto-read-liunxdo/commit/0768f303e6c4a4074f3528970f5329c53d55ae07))
+* 加上首页 ([b561fde](https://www.github.com/14790897/auto-read-liunxdo/commit/b561fde351ad031f4e0e1396aa4683ea0572ab1a))
+
+
+### Bug Fixes
+
+* 尝试改进dockerfile ([533a5c9](https://www.github.com/14790897/auto-read-liunxdo/commit/533a5c9d21c35c1b3c8d2d3d2c46a0dedd070493))
+* 暴露端口问题 ([78a1aca](https://www.github.com/14790897/auto-read-liunxdo/commit/78a1aca637909f65909eadd85b45a36704646020))
+
+## [1.6.0](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.5.0...v1.6.0) (2024-10-10)
+
+
+### Features
+
+* last_read_post_number完善自动阅读跳转 ([f872df4](https://www.github.com/14790897/auto-read-liunxdo/commit/f872df46d04c5726c023a6f1a3d464bf21607cc1))
+* 先点赞再阅读 ([a9f016b](https://www.github.com/14790897/auto-read-liunxdo/commit/a9f016be196074d75f549ed408892ed0809e6095))
+* 增加登录成功通知 ([7d4c96d](https://www.github.com/14790897/auto-read-liunxdo/commit/7d4c96dd78f7d5332a8d9d36729f46d0746c83ef))
+* 自动点赞的docker ([d4b7195](https://www.github.com/14790897/auto-read-liunxdo/commit/d4b7195047ca12f4991583d93bd1a514d56a960a))
+
+
+### Bug Fixes
+
+* action不能指定点赞用户 ([4fb63a3](https://www.github.com/14790897/auto-read-liunxdo/commit/4fb63a3b035f01f05316c3b37b4cc1c305e1b933))
+* docker读取.env.local变量 ([c5a61bf](https://www.github.com/14790897/auto-read-liunxdo/commit/c5a61bf5ac38cd05fbde5204976d52541f3c6dfb))
+* 启动间隔时间修复 ([3d32bba](https://www.github.com/14790897/auto-read-liunxdo/commit/3d32bba8c471750b7e0e9b508eaca9e49f258c52))
+
+## [1.5.0](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.4.0...v1.5.0) (2024-09-12)
+
+
+### Features
+
+* bypasscf使用更好的脚本 ([0fd5340](https://www.github.com/14790897/auto-read-liunxdo/commit/0fd534051629d85f9a7f31d106abf42ca4743576))
+* 优化dockercompose 使得它可以直接读取env文件 ([08a9a4f](https://www.github.com/14790897/auto-read-liunxdo/commit/08a9a4fb044350d72b939531b9398fc6467cdcff))
+* 使用api获得文章列表 ([ccca920](https://www.github.com/14790897/auto-read-liunxdo/commit/ccca9208b28f155af58c2513e2a0040b26b77905))
+* 使用search获得不重复的post ([046e1e6](https://www.github.com/14790897/auto-read-liunxdo/commit/046e1e6026a6484ccfab4fea134f7893782c1dd5))
+* 可以设置结束时间，避免action报错，默认15分钟 ([8f19e92](https://www.github.com/14790897/auto-read-liunxdo/commit/8f19e92adb2ce422787be6a4bf0abece9c385b4d))
+* 多账号分批处理 ([26e516f](https://www.github.com/14790897/auto-read-liunxdo/commit/26e516fbb451769383a31804739a80786ff5c563))
+* 多账号分批处理 ([a5002fb](https://www.github.com/14790897/auto-read-liunxdo/commit/a5002fb9bb104013dd5094f0a32ae37d67107e03))
+* 多账号分批处理 ([500c34e](https://www.github.com/14790897/auto-read-liunxdo/commit/500c34e840c3781f6ce3236e22b5d7a2649639de))
+* 点赞特定用户cron ([214b3b9](https://www.github.com/14790897/auto-read-liunxdo/commit/214b3b9507d74df9a30da8df3db0fe1459d3853f))
+* 电报机器人消息推送 ([43f1f42](https://www.github.com/14790897/auto-read-liunxdo/commit/43f1f425a94589267bc716e144549088359c0ff4))
+* 自动点赞特定用户 ([e2340d4](https://www.github.com/14790897/auto-read-liunxdo/commit/e2340d4433fdd8b4a05af782e89dcd6285f9b9ef))
+
+
+### Bug Fixes
+
+* cron中变量的默认值 ([10499e2](https://www.github.com/14790897/auto-read-liunxdo/commit/10499e2aa7fb02075ee7925cbeb2125a59a2d922))
+* cron中变量的默认值 ([9d0302a](https://www.github.com/14790897/auto-read-liunxdo/commit/9d0302a9098267ea587456a7f607e547cd004d86))
+* cron中变量的默认值 ([09fd9bd](https://www.github.com/14790897/auto-read-liunxdo/commit/09fd9bd7a0f0e2b047d3c02bd7f4d93df22503dd))
+* cron中变量的默认值 ([c1c07ca](https://www.github.com/14790897/auto-read-liunxdo/commit/c1c07cae1bd109f8785907b35ebc63b28dce6e93))
+* cron中变量的默认值 ([6bc8bce](https://www.github.com/14790897/auto-read-liunxdo/commit/6bc8bce2a42bbb414450454f9bd36c5a07da8fc5))
+* cron中变量的默认值 ([b2227b6](https://www.github.com/14790897/auto-read-liunxdo/commit/b2227b60a0fd3af4e5abe0dbe19b85bc42ba855c))
+* cron中变量的默认值 ([b9b72fc](https://www.github.com/14790897/auto-read-liunxdo/commit/b9b72fce05be1046b7f917d9820ba3d9260ab476))
+* cron中变量的默认值 ([4cc640a](https://www.github.com/14790897/auto-read-liunxdo/commit/4cc640a7c15f30c0f6455a2e6343fd4681960a67))
+* cron中变量的默认值 ([3b044c1](https://www.github.com/14790897/auto-read-liunxdo/commit/3b044c1cbc57cb043e53a0de15287cbd35f0fce1))
+* cron中变量的默认值 ([72af582](https://www.github.com/14790897/auto-read-liunxdo/commit/72af5821a782b3eb6174372d89dbff5a78656ecf))
+* cron中变量的默认值 ([8fedb7b](https://www.github.com/14790897/auto-read-liunxdo/commit/8fedb7be3930f02fa2b89a49a35484e0f8cfd273))
+* env.local后才能读取环境变量，page.evaluate变量必须从外部显示的传入, 因为在浏览器上下文它是读取不了的 ([f57d512](https://www.github.com/14790897/auto-read-liunxdo/commit/f57d5128dae5e3cffc9928589cf9c427e84d648c))
+* env写错了 ([19d3b64](https://www.github.com/14790897/auto-read-liunxdo/commit/19d3b644445bdd26bb4a3e5a5ebc480ed085cbee))
+* run-at  document-end可以修复有时候脚本不运行的问题 ([a0c35f2](https://www.github.com/14790897/auto-read-liunxdo/commit/a0c35f26a2fb187950d4a220ed096fd419e59c88))
+* throw error导致无法运行 ([67811e3](https://www.github.com/14790897/auto-read-liunxdo/commit/67811e35394bf02ef1af6850dffd6b888c4091ae))
+* 保存用户的时候需要清除      localStorage.removeItem("lastOffset"); ([edb72ac](https://www.github.com/14790897/auto-read-liunxdo/commit/edb72ac66ac6bcd864781d2c85d7795bc15881d9))
+* 其实不需要 !topic.unseen ([d2a0ab3](https://www.github.com/14790897/auto-read-liunxdo/commit/d2a0ab3342fcd26498fab9c0e6ebac815b4c353c))
+* 只有一个账号会立刻停止的问题 ([672ebee](https://www.github.com/14790897/auto-read-liunxdo/commit/672ebee00c954cd41661751a35a08868eb3d239d))
+* 密码转义 ([e5802ab](https://www.github.com/14790897/auto-read-liunxdo/commit/e5802abbf770c5a65cfaee3515529d75558b8068))
+* 直接使用油猴脚本 ([d429ca9](https://www.github.com/14790897/auto-read-liunxdo/commit/d429ca931cf8bddfbd14788a451e0c6d2cf05313))
+* 返回 ([9f5d398](https://www.github.com/14790897/auto-read-liunxdo/commit/9f5d39814940c88628bdd648b7766143734f0201))
+* 通过在主进程直接设置localstorage变量，避免单独设置 ([99b6725](https://www.github.com/14790897/auto-read-liunxdo/commit/99b67252ba7536a75708b6eb19956ace04a71122))
+* 重置用户的时候需要清空post列表 ([5980c9a](https://www.github.com/14790897/auto-read-liunxdo/commit/5980c9a3b205af32fbceedc157400330eb77f3b0))
+
+## [1.4.0](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.3.0...v1.4.0) (2024-08-08)
+
+
+### Features
+
+* action中如果secrets未定义则使用env文件 ([cc2812f](https://www.github.com/14790897/auto-read-liunxdo/commit/cc2812f6a1bdf43bc03c676a963b00ce8271f732))
+* 增加了对小众软件论坛的支持（https://linux.do/t/topic/169209/166） ([598913c](https://www.github.com/14790897/auto-read-liunxdo/commit/598913c09b9bc9b880fe9f974c3da490acb6ca55))
+
+
+### Bug Fixes
+
+* action 中secret读取特殊字符处理 ([5457abc](https://www.github.com/14790897/auto-read-liunxdo/commit/5457abce09c0b26a54ef6b67b0563b49ca567e97))
+* docker-compose.yml命令错误 ([ec3cedc](https://www.github.com/14790897/auto-read-liunxdo/commit/ec3cedc83895cbf8dc759770c1203fa718b52dfd))
+* docker-compose.yml命令错误 ([2b4d73d](https://www.github.com/14790897/auto-read-liunxdo/commit/2b4d73de2becd56f8a1c4d7ecc8aff71de619225))
+* docker-compose.yml命令错误 ([2d8a099](https://www.github.com/14790897/auto-read-liunxdo/commit/2d8a099990d986741189129dfb67ec8e8869325e))
+* docker-compose.yml命令错误（https://linux.do/t/topic/169209/158） ([b83b09c](https://www.github.com/14790897/auto-read-liunxdo/commit/b83b09cbc0b96b846d78d8aa1ef242e4429bac9b))
+* docker命令执行的代码 ([aa36a2b](https://www.github.com/14790897/auto-read-liunxdo/commit/aa36a2b754e2591c65dfdd9314e8676aeba60b2b))
+* loginbutton作用域问题 ([1f626aa](https://www.github.com/14790897/auto-read-liunxdo/commit/1f626aa8cd8299086f91a4019779500cbd9abbfb))
+* Windows需要等待cf的完成 ([bdcbeaf](https://www.github.com/14790897/auto-read-liunxdo/commit/bdcbeaff2403123b74a0e031c28560b16265798b))
+* 似乎不需要特殊处理 ([dc96005](https://www.github.com/14790897/auto-read-liunxdo/commit/dc960051002d88f27e5fd5ccde5a22d6be511250))
+* 增加navigation超时时长 ([7c92ff0](https://www.github.com/14790897/auto-read-liunxdo/commit/7c92ff0b3d58753571674f133eaf3bd88d9c75de))
+* 增加点赞间隔 ([dc472be](https://www.github.com/14790897/auto-read-liunxdo/commit/dc472be03be350e2a69d7adc25ae628f1193f241))
+* 增加点赞间隔，避免频繁429 ([706198d](https://www.github.com/14790897/auto-read-liunxdo/commit/706198d1359157da83bb839827278a6f0b61c01c))
+* 还是要找button ([ba801c9](https://www.github.com/14790897/auto-read-liunxdo/commit/ba801c9cc82b6ba5825fc79111c5d8d319c50cf3))
+
+## [1.3.0](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.2.1...v1.3.0) (2024-08-04)
+
+
+### Features
+
+* bypasscf可以绕过cf了 ([197e04f](https://www.github.com/14790897/auto-read-liunxdo/commit/197e04f1b67164ccabdb8e8347039c2ceb51d8e7))
+* 截图记录功能 ([2e98654](https://www.github.com/14790897/auto-read-liunxdo/commit/2e986540f9170ef345b8d2a3e8df7b4b7a8a00c2))
+* 新的cron ([5e005eb](https://www.github.com/14790897/auto-read-liunxdo/commit/5e005eb4591f193c3b45ba4029e4363c7356f62e))
+
+
+### Bug Fixes
+
+* action大小写问题 ([aeeb918](https://www.github.com/14790897/auto-read-liunxdo/commit/aeeb918fe199003b66279aa1e182496ed4b4d683))
+* auto加双引号 ([b38c22e](https://www.github.com/14790897/auto-read-liunxdo/commit/b38c22ee52165cecdae63c296434f564af7f95f0))
+* docker compose环境变量配置 ([b67d946](https://www.github.com/14790897/auto-read-liunxdo/commit/b67d94633920a9c8f2c5eaf6a8a08590d443cf7c))
+* docker compose环境变量配置 ([a7f19bb](https://www.github.com/14790897/auto-read-liunxdo/commit/a7f19bbd3d139e5ede1402127fed13ce5bfea9f1))
+* es6 dirname不存在 ([b5f02b4](https://www.github.com/14790897/auto-read-liunxdo/commit/b5f02b44c4b2c1d02d1ac83d1bcfe8d2f2e55096))
+* Windows有头，Linux无头 ([5a39ded](https://www.github.com/14790897/auto-read-liunxdo/commit/5a39ded0ca6afc3790d891d70928cc7a863c5e01))
+* 使用{ waitUntil: "domcontentloaded" }避免超时错误 ([8c3e38a](https://www.github.com/14790897/auto-read-liunxdo/commit/8c3e38a73efbc51c02191f0bb71350ff4486d9f5))
+
 ### [1.2.1](https://www.github.com/14790897/auto-read-liunxdo/compare/v1.2.0...v1.2.1) (2024-05-20)
 
 
